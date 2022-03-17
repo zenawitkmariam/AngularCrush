@@ -1,0 +1,7 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+<div class="task" [ngClass]="{reminder: task.reminder}" (dblclick) = "onToggle(task)">
+    <h3>{{task.text}}<i [ngStyle]="{color:'red'}" (click)="onDelete(task)"
+        class="zmdi zmdi-delete"></i>
+    </h3>
+    <h3>{{task.day}}</h3>
+</div>
